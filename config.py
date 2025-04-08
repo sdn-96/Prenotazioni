@@ -7,6 +7,7 @@ FTP_DIR = 'QUOKKA'                    # ← cartella di destinazione
 # 
 BASE_FILENAME = 'prenotazioni'
 DATA_FOLDER = 'dati'
+DATE_FORMAT = "%Y%m%d%H%M%S"
 
 # URL
 URL_LOGIN = "https://vr.krossbooking.com/quokka360it/login"

@@ -2,6 +2,8 @@ import os
 import io
 import json
 from ftpserver import init_ftp, get_files_from_ftp
+from datetime import datetime
+from config import DATE_FORMAT
 
 LOG_FILE = 'storico_modifiche.txt'
 
@@ -36,12 +38,12 @@ def compare_jsons(old_json, new_json):
     # Prenotazioni cancellate
     for nome in old_dict:
         if nome not in new_dict:
-            changes.append(f"❌ Prenotazione cancellata: {nome}")
+            changes.append(f"❌ Prenotazione cancellata: {nome}, -{old_dict[nome][8]}")
 
     # Prenotazioni nuove o modificate
     for nome in new_dict:
         if nome not in old_dict:
-            changes.append(f"🆕 Nuova prenotazione: {nome}")
+            changes.append(f"✅ Nuova prenotazione: {nome}, +{new_dict[nome][8]}")
         else:
             diffs = []
             old_row = old_dict[nome]
@@ -57,6 +59,10 @@ def compare_jsons(old_json, new_json):
 
     return changes
 
+def readable_date(timestamp):
+    data_file = datetime.strptime(timestamp, DATE_FORMAT)
+    return datetime.strftime(data_file, "%d/%m/%Y %H:%M")
+
 if __name__=='__main__':
     # === MAIN ===
     ftp = init_ftp()
@@ -69,8 +75,8 @@ if __name__=='__main__':
     if len(json_files) >= 2:
         storico_path = os.path.join(os.getcwd(), LOG_FILE)
         with open(storico_path, 'w', encoding='utf-8') as log:
-            log.write("📘 STORICO MODIFICHE PRENOTAZIONI\n")
-            log.write(f"Rilevazione Base f{timestamps[0]}"+"\n")
+            log.write("📘 STORICO MODIFICHE PRENOTAZIONI\n\n")
+            log.write(f"Rilevazione Base {readable_date(timestamps[0])}"+"\n")
             log.write("="*40 + "\n\n")
             for i in range(1, len(json_files)):
                 # Carica i due file JSON da confrontare
@@ -89,7 +95,7 @@ if __name__=='__main__':
 
                 # Confronta i due file e registra le modifiche
                 changes = compare_jsons(old_json, new_json)
-                log.write(f"Rilevazione {timestamp2}"+"\n\n")
+                log.write(f"Rilevazione {readable_date(timestamp2)}"+"\n\n")
                 for change in changes:
                     if change:
                         log.write("• " + change + "\n")

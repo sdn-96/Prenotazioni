@@ -4,9 +4,9 @@ from datetime import datetime
 from deepdiff import DeepDiff
 import json
 import os
-from config import BASE_FILENAME, DATA_FOLDER
+from config import BASE_FILENAME, DATA_FOLDER, DATE_FORMAT
 
-timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+timestamp = datetime.now().strftime(DATE_FORMAT)
 
 # Step 7: Salvataggio JSON
 os.makedirs(DATA_FOLDER, exist_ok=True)
