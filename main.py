@@ -50,10 +50,13 @@ if __name__=='__main__':
         else:
             # Carica un nuovo file con timestamp
             log = create_log(ftp)
+            with open('storico_modifiche.txt', 'a') as f:
+                f.write(log)
             with open(new_json_path, 'rb') as f:
                 ftp.storbinary(f"STOR {new_filename}", f)
                 print(f"📤 Nuovo file caricato: {new_filename}")
-                ftp.storbinary("STOR storico_modifiche.txt", log)
+            with open('storico_modifiche.txt', 'rb', encoding='utf-8') as f:
+                ftp.storbinary("STOR storico_modifiche.txt", f)
                 print(f"📤 Nuovo file caricato: storico_modifiche.txt")
         ftp.quit()
     except Exception as e:
