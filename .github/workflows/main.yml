@@ -1,0 +1,13 @@
+name: Run prenotazioni
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # Runs every 5 minutes
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Hello World
+        run: python main.py
