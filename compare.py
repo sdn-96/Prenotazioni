@@ -63,7 +63,8 @@ def readable_date(timestamp):
     data_file = datetime.strptime(timestamp, DATE_FORMAT)
     return datetime.strftime(data_file, "%d/%m/%Y %H:%M")
 
-def create_log(ftp, json_file_names):
+def create_log(ftp):
+    json_file_names = get_files_from_ftp(ftp)
     timestamps = [file.split('_')[-1].replace('.json', '') for file in json_file_names]
     res = ""
     res += "📘 STORICO MODIFICHE PRENOTAZIONI\n\n"
