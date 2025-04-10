@@ -55,7 +55,7 @@ if __name__=='__main__':
             with open(new_json_path, 'rb') as f:
                 ftp.storbinary(f"STOR {new_filename}", f)
                 print(f"📤 Nuovo file caricato: {new_filename}")
-            with open('storico_modifiche.txt', 'rb', encoding='utf-8') as f:
+            with open('storico_modifiche.txt', 'rb') as f:
                 ftp.storbinary("STOR storico_modifiche.txt", f)
                 print(f"📤 Nuovo file caricato: storico_modifiche.txt")
         ftp.quit()
