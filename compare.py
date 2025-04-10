@@ -63,6 +63,39 @@ def readable_date(timestamp):
     data_file = datetime.strptime(timestamp, DATE_FORMAT)
     return datetime.strftime(data_file, "%d/%m/%Y %H:%M")
 
+def create_log(ftp, json_file_names):
+    timestamps = [file.split('_')[-1].replace('.json', '') for file in json_file_names]
+    res = ""
+    res += "📘 STORICO MODIFICHE PRENOTAZIONI\n\n"
+    res += f"Rilevazione Base {readable_date(timestamps[0])}"+"\n"
+    res += "="*40 + "\n\n"
+    for i in range(1, len(json_file_names)):
+        # Carica i due file JSON da confrontare
+        file1 = json_file_names[i - 1]
+        file2 = json_file_names[i]
+
+        print(f"Confrontando {file1} con {file2}...")
+
+        # Carica il contenuto dei file JSON dal server FTP
+        old_json = load_json_from_ftp(ftp, file1)
+        new_json = load_json_from_ftp(ftp, file2)
+
+        # Estrai i timestamp dai nomi dei file (assumendo che contengano il timestamp nel nome)
+        timestamp1 = timestamps[i-1]
+        timestamp2 = timestamps[i]
+
+        # Confronta i due file e registra le modifiche
+        changes = compare_jsons(old_json, new_json)
+        res += f"Rilevazione {readable_date(timestamp2)}"+"\n\n"
+        for change in changes:
+            if change:
+                res += "• " + change + "\n"
+            else:
+                res += "✅ Nessuna modifica rilevata\n"
+        res += "\n" + "-"*40 + "\n\n"
+    return res
+    
+
 if __name__=='__main__':
     # === MAIN ===
     ftp = init_ftp()
