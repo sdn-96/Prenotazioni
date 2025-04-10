@@ -43,6 +43,7 @@ if __name__=='__main__':
         with open(new_json_path, 'r', encoding='utf-8') as f:
             local_json_content = f.read()
         diff = DeepDiff(previous_content, local_json_content, ignore_order=True)
+        diff = True
         if not diff:
             ftp.rename(previous_filename, new_filename)
             print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
