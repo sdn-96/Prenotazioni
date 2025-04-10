@@ -5,6 +5,7 @@ from deepdiff import DeepDiff
 import json
 import os
 from config import BASE_FILENAME, DATA_FOLDER, DATE_FORMAT
+from compare import create_log
 
 timestamp = datetime.now().strftime(DATE_FORMAT)
 
@@ -47,6 +48,7 @@ if __name__=='__main__':
             print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
         else:
             # Carica un nuovo file con timestamp
+            log = create_log(ftp)
             with open(new_json_path, 'rb') as f:
                 ftp.storbinary(f"STOR {new_filename}", f)
                 print(f"📤 Nuovo file caricato: {new_filename}")
