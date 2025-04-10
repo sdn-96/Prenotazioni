@@ -1,2 +1,2 @@
 pandas
-beautifoulsoup4
+beautifulsoup4
