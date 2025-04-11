@@ -21,7 +21,7 @@ def get_last_json(ftp):
     return json_text, latest_file
 
 def init_ftp():
-    ftp = FTP(FTP_HOST, encoding='latin-1')
+    ftp = FTP(FTP_HOST, encoding='latin-1', timeout=100)
     ftp.login(FTP_USER, FTP_PASS)
     ftp.cwd(FTP_DIR)
     return ftp
