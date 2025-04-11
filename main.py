@@ -7,7 +7,19 @@ import os
 from config import BASE_FILENAME, DATA_FOLDER, DATE_FORMAT
 from compare import create_log
 
-timestamp = datetime.now().strftime(DATE_FORMAT)
+now = datetime.now()
+timestamp = now.strftime(DATE_FORMAT)
+zone_H = now.strftime('%H')
+
+try:
+    import requests
+    # Fetch UTC time from WorldTimeAPI
+    response = requests.get("http://worldtimeapi.org/api/timezone/Etc/UTC")
+    utc_time = response.json()["utc_datetime"]
+    print("True UTC time:", utc_time)
+except Exception:
+    pass
+
 
 # Step 7: Salvataggio JSON
 os.makedirs(DATA_FOLDER, exist_ok=True)
