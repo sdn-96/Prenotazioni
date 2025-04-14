@@ -38,7 +38,7 @@ json structure for base changes data
 {
   "type": "change"
   "columns": [
-    "Type": "added"/"removed"/"changed"
+    "Change",
     "Appartamento",
     "Nome",
     "Nazione",
