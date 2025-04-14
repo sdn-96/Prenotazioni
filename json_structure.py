@@ -52,7 +52,7 @@ json structure for base changes data
   ],
   "rows": [
     [
-      "added"/"removed"/"changed"
+      "added"/"removed"/"modified"
       "L. BRIENNO",
       "3540/2024",
       "",
