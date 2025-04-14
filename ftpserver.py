@@ -1,8 +1,8 @@
-import io
+import io, json
 from ftplib import FTP
 from config import FTP_HOST, FTP_USER, FTP_PASS, FTP_DIR
 
-class FtpHandler()
+class FtpHandler():
     def __init__(self):
         self.ftp = FTP(FTP_HOST, encoding='latin-1', timeout=100)
         self.ftp.login(FTP_USER, FTP_PASS)
@@ -28,15 +28,15 @@ class FtpHandler()
             return json.loads(json_text)
 
     # === FUNZIONE: Scarica ultimo file dal server ===
-    def get_last_json(ftp):
-        latest_file = self.ftp.get_files_from_ftp()
-        json_text = self.ftp.load_json_from_ftp(latest_file)
+    def get_last_json(self):
+        latest_file = self.get_files_from_ftp()[-1]
+        json_text = self.load_json_from_ftp(latest_file)
         return json_text, latest_file
 
     def rename(self, oldname, newname):
         self.ftp.rename(oldname, newname)
 
-    def upload(path, filename):
+    def upload(self, path, filename):
         with open(path, 'rb') as f:
             self.ftp.storbinary(f"STOR {new_filename}", f)
             print(f"📤 Nuovo file caricato: {new_filename}")

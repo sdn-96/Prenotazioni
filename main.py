@@ -1,4 +1,4 @@
-from ftpserver import get_last_json, init_ftp
+from ftpserver import FtpHandler
 from web import login, request_data, analize 
 from datetime import datetime
 from deepdiff import DeepDiff
@@ -47,25 +47,23 @@ if __name__=='__main__':
 
     # === FTP: Upload con confronto ===
     try:
-        ftp_handler = FtpHandler()
-        # Scarica il file JSON esistente (se presente)
-        previous_content, previous_filename = ftp_handler.get_last_json() or (None, None)
-        new_json_path = f"{DATA_FOLDER}/{new_filename}"
-        with open(new_json_path, 'r', encoding='utf-8') as f:
-            local_json_content = f.read()
-        diff = DeepDiff(previous_content, local_json_content, ignore_order=True)
-        if not diff:
-            ftp_handler.rename(previous_filename, new_filename)
-            print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
-        else:
-            # Carica un nuovo file con timestamp
-            log = create_log(ftp)
-            with open('storico_modifiche.txt', 'a') as f:
-                f.write(log)
-            ftp_handler.upload(new_json_path, new_filename)
-            ftp_handler.upload('storico_modifiche.txt', 'storico_modifiche.txt')
-        ftp_handler.quit()
-    except Exception as e:
-        print("❌ Errore durante l'upload FTP:", e)
+    ftp_handler = FtpHandler()
+    # Scarica il file JSON esistente (se presente)
+    previous_content, previous_filename = ftp_handler.get_last_json() or (None, None)
+    new_json_path = f"{DATA_FOLDER}/{new_filename}"
+    with open(new_json_path, 'r', encoding='utf-8') as f:
+        local_json_content = f.read()
+    diff = DeepDiff(previous_content, local_json_content, ignore_order=True)
+    if not diff:
+        ftp_handler.rename(previous_filename, new_filename)
+        print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
+    else:
+        # Carica un nuovo file con timestamp
+        log = create_log(ftp)
+        with open('storico_modifiche.txt', 'a') as f:
+            f.write(log)
+        ftp_handler.upload(new_json_path, new_filename)
+        ftp_handler.upload('storico_modifiche.txt', 'storico_modifiche.txt')
+    ftp_handler.quit()
 
 
