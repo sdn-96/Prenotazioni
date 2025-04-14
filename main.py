@@ -6,25 +6,23 @@ import json
 import os
 from config import BASE_FILENAME, DATA_FOLDER, DATE_FORMAT
 from compare import create_log
+import requests
 
-now = datetime.now()
-timestamp = now.strftime(DATE_FORMAT)
-zone_H = now.strftime('%H')
-
-try:
-    import requests
-    # Fetch UTC time from WorldTimeAPI
-    response = requests.get("http://worldtimeapi.org/api/timezone/Etc/UTC")
-    utc_time = response.json()["utc_datetime"]
-    print("True UTC time:", utc_time)
-except Exception:
-    pass
-
-
-# Step 7: Salvataggio JSON
-os.makedirs(DATA_FOLDER, exist_ok=True)
-
+def get_timestamp():
+    try:
+        # Fetch UTC time from WorldTimeAPI
+        response = requests.get("http://worldtimeapi.org/api/timezone/Etc/UTC")
+        utc_time = response.json()["utc_datetime"]
+        now = datetime.fromisoformat(utc_time)
+    except Exception:
+        now = datetime.now()
+    finally:
+        timestamp = now.strftime(DATE_FORMAT)
+    return timestamp
+    
 def save_to_json(headers, data):
+    # Step 7: Salvataggio JSON
+    os.makedirs(DATA_FOLDER, exist_ok=True)
     file_name = f"{BASE_FILENAME}_{timestamp}.json"  # Aggiungi il timestamp al nome del file
     file_path = f"{DATA_FOLDER}/{file_name}"
     json_data = {
@@ -38,6 +36,7 @@ def save_to_json(headers, data):
 
 
 if __name__=='__main__':
+    timestamp = get_timestamp()
     session = login()
     results = request_data(session)
     print('dati ottenuti')
