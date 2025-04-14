@@ -95,6 +95,49 @@ def create_log(ftp):
                 res += "✅ Nessuna modifica rilevata\n"
         res += "\n" + "-"*40 + "\n\n"
     return res
+
+def get_changes(json1, json2):
+    old_dict, old_cols = build_row_dict(json1)
+    new_dict, new_cols = build_row_dict(json2)
+
+    changes = []
+
+    # Prenotazioni cancellate
+    for nome in old_dict:
+        if nome not in new_dict:
+            change = ["removed"] + old_dict[nome]
+            changes.append(change)
+
+    # Prenotazioni nuove o modificate
+    for nome in new_dict:
+        if nome not in old_dict:
+            change = ["added"] + new_dict[nome]
+            changes.append(change)
+        else:
+            diffs = []
+            old_row = old_dict[nome]
+            new_row = new_dict[nome]
+            for param in PARAMS:
+                idx = old_cols[param]
+                old_val = str(old_row[idx])
+                new_val = str(new_row[idx])
+                if old_val != new_val:
+                    diffs.append(f"{param}: '{old_val}' -> '{new_val}'")
+            if diffs:
+                change = ["modified"] + new_row
+                changes.append(change)
+    return changes
+
+def save_changes_to_json(changes, path):
+    _dict = {
+        "type": "change",
+        "columns": ["Change"]+PARAMS,
+        "rows" : changes
+    }
+    with open(path, "w") as f:
+        json.dump(_dict, f, indent=4)
+    return
+    
     
 
 if __name__=='__main__':
