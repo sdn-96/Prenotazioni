@@ -1,7 +1,7 @@
 import os
 import io
 import json
-from ftpserver import init_ftp, get_files_from_ftp
+from ftpserver import FtpHandler
 from datetime import datetime
 from config import DATE_FORMAT
 
@@ -11,14 +11,6 @@ LOG_FILE = 'storico_modifiche.txt'
 PARAMS = ["Check in", "Check out", "Notti", "Totale pernottamento", "Tot proprietario", "Netto proprietario"]
 
 
-# === Funzione per caricare un file JSON dal server FTP ===
-def load_json_from_ftp(ftp, filename):
-    buffer = io.BytesIO()
-    ftp.retrbinary(f"RETR {filename}", buffer.write)
-    json_bytes = buffer.getvalue()
-    json_text = json_bytes.decode('utf-8')
-    return json.loads(json_text)
-
 # Costruisce un dizionario {Nome: riga} per ogni file
 def build_row_dict(data):
     col_idx = {col: i for i, col in enumerate(data["columns"])}
@@ -27,6 +19,17 @@ def build_row_dict(data):
         row[nome_idx]: row
         for row in data["rows"]
     }, col_idx
+
+def save_changes_to_json(changes, path):
+    _dict = {
+        "type": "change",
+        "columns": ["Change"]+PARAMS,
+        "rows" : changes
+    }
+    with open(path, "w") as f:
+        json.dump(_dict, f, indent=4)
+    return
+
 
 # Confronta due file JSON e restituisce una lista di modifiche testuali
 def compare_jsons(old_json, new_json):
@@ -124,28 +127,45 @@ def get_changes(json1, json2):
                 if old_val != new_val:
                     diffs.append(f"{param}: '{old_val}' -> '{new_val}'")
             if diffs:
+                
                 change = ["modified"] + new_row
                 changes.append(change)
     return changes
 
-def save_changes_to_json(changes, path):
-    _dict = {
-        "type": "change",
-        "columns": ["Change"]+PARAMS,
-        "rows" : changes
-    }
-    with open(path, "w") as f:
-        json.dump(_dict, f, indent=4)
-    return
+def integrate_changes(base_dict, changes_dict):
+    new_dict = copy.deepcopy(base_dict)
+    changes = changes_dict["rows"]
+    for change in changes:
+        change_type = change[0]
+        change_row = change[1:]
+        if change_type == "added":
+            new_dict["rows"].append(change_row)
+        elif change_type == "removed":
+            removed_reservation = change_row[1]
+            new_dict["rows"] = [_row for _row in new_dict["rows"] if _row[1] != removed_reservation]
+        elif change_type == "modified":
+            changed_reservation = change_row[1]
+            new_dict["rows"] = [
+                _row if _row[1] != changed_reservation else change_row
+                for _row in new_dict["rows"]
+                ]
+    return new_dict
+
+
+
+
+
+
+
     
     
 
 if __name__=='__main__':
     # === MAIN ===
-    ftp = init_ftp()
+    ftp_handler = FtpHandler()
 
     # Ottenere l'elenco dei file JSON ordinati per timestamp (nome)
-    json_files = get_files_from_ftp(ftp)
+    json_files = ftp_handler.get_files_from_ftp()
     timestamps = [file.split('_')[-1].replace('.json', '') for file in json_files]
 
     # Se ci sono almeno due file, confrontali
@@ -179,6 +199,6 @@ if __name__=='__main__':
                     else:
                         log.write("✅ Nessuna modifica rilevata\n")
                 log.write("\n" + "-"*40 + "\n\n")
-    ftp.quit()
+    ftp_handler.quit()
 
 

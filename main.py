@@ -47,28 +47,24 @@ if __name__=='__main__':
 
     # === FTP: Upload con confronto ===
     try:
-        ftp = init_ftp()
+        ftp_handler = FtpHandler()
         # Scarica il file JSON esistente (se presente)
-        previous_content, previous_filename = get_last_json(ftp) or (None, None)
+        previous_content, previous_filename = ftp_handler.get_last_json() or (None, None)
         new_json_path = f"{DATA_FOLDER}/{new_filename}"
         with open(new_json_path, 'r', encoding='utf-8') as f:
             local_json_content = f.read()
         diff = DeepDiff(previous_content, local_json_content, ignore_order=True)
         if not diff:
-            ftp.rename(previous_filename, new_filename)
+            ftp_handler.rename(previous_filename, new_filename)
             print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
         else:
             # Carica un nuovo file con timestamp
             log = create_log(ftp)
             with open('storico_modifiche.txt', 'a') as f:
                 f.write(log)
-            with open(new_json_path, 'rb') as f:
-                ftp.storbinary(f"STOR {new_filename}", f)
-                print(f"📤 Nuovo file caricato: {new_filename}")
-            with open('storico_modifiche.txt', 'rb') as f:
-                ftp.storbinary("STOR storico_modifiche.txt", f)
-                print(f"📤 Nuovo file caricato: storico_modifiche.txt")
-        ftp.quit()
+            ftp_handler.upload(new_json_path, new_filename)
+            ftp_handler.upload('storico_modifiche.txt', 'storico_modifiche.txt')
+        ftp_handler.quit()
     except Exception as e:
         print("❌ Errore durante l'upload FTP:", e)
 
