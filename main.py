@@ -59,7 +59,9 @@ if __name__=='__main__':
         print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
     else:
         # Carica un nuovo file con timestamp
-        log = create_log(ftp)
+        json_file_names = ftp_handler.get_files_from_ftp()
+        jsons = ftp_handler.download_all()
+        log = create_log(json_file_names, jsons)
         with open('storico_modifiche.txt', 'a') as f:
             f.write(log)
         ftp_handler.upload(new_json_path, new_filename)
