@@ -4,6 +4,7 @@ import json
 from ftpserver import FtpHandler
 from datetime import datetime
 from config import DATE_FORMAT
+import copy
 
 LOG_FILE = 'storico_modifiche.txt'
 
@@ -66,27 +67,20 @@ def readable_date(timestamp):
     data_file = datetime.strptime(timestamp, DATE_FORMAT)
     return datetime.strftime(data_file, "%d/%m/%Y %H:%M")
 
-def create_log(ftp):
-    json_file_names = get_files_from_ftp(ftp)
+def create_log(json_file_names, jsons):
     timestamps = [file.split('_')[-1].replace('.json', '') for file in json_file_names]
     res = ""
     res += "📘 STORICO MODIFICHE PRENOTAZIONI\n\n"
     res += f"Rilevazione Base {readable_date(timestamps[0])}"+"\n"
     res += "="*40 + "\n\n"
     for i in range(1, len(json_file_names)):
-        # Carica i due file JSON da confrontare
-        file1 = json_file_names[i - 1]
-        file2 = json_file_names[i]
-
-        print(f"Confrontando {file1} con {file2}...")
-
-        # Carica il contenuto dei file JSON dal server FTP
-        old_json = load_json_from_ftp(ftp, file1)
-        new_json = load_json_from_ftp(ftp, file2)
-
         # Estrai i timestamp dai nomi dei file (assumendo che contengano il timestamp nel nome)
         timestamp1 = timestamps[i-1]
         timestamp2 = timestamps[i]
+
+        # Carica il contenuto dei file JSON dal server FTP
+        old_json = jsons[i - 1]
+        new_json = json[i]
 
         # Confronta i due file e registra le modifiche
         changes = compare_jsons(old_json, new_json)
@@ -150,14 +144,6 @@ def integrate_changes(base_dict, changes_dict):
                 for _row in new_dict["rows"]
                 ]
     return new_dict
-
-
-
-
-
-
-
-    
     
 
 if __name__=='__main__':
@@ -165,7 +151,7 @@ if __name__=='__main__':
     ftp_handler = FtpHandler()
 
     # Ottenere l'elenco dei file JSON ordinati per timestamp (nome)
-    json_files = ftp_handler.get_files_from_ftp()
+    json_files = ftp_handler.list()
     timestamps = [file.split('_')[-1].replace('.json', '') for file in json_files]
 
     # Se ci sono almeno due file, confrontali
@@ -183,8 +169,8 @@ if __name__=='__main__':
                 print(f"Confrontando {file1} con {file2}...")
 
                 # Carica il contenuto dei file JSON dal server FTP
-                old_json = load_json_from_ftp(ftp, file1)
-                new_json = load_json_from_ftp(ftp, file2)
+                old_json = ftp_handler.download(file1)
+                new_json = ftp_handler.download(file2)
 
                 # Estrai i timestamp dai nomi dei file (assumendo che contengano il timestamp nel nome)
                 timestamp1 = timestamps[i-1]
