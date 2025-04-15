@@ -9,13 +9,27 @@ class FtpHandler():
         self.ftp.cwd(FTP_DIR)
 
     # === Funzione per scaricare i file dal server FTP ===
-    def get_files_from_ftp(self):
+    def list(self):
         files = self.ftp.nlst()  # Ottieni l'elenco dei file nella directory
         json_files = sorted([f for f in files if f.endswith('.json')], reverse=False)
         return json_files
 
-    # === Funzione per scaricare un file JSON dal server FTP ===
-    def load_json_from_ftp(self, filename):
+    # === FUNZIONE: Scarica ultimo file dal server ===
+    def get_last_json(self):
+        latest_file = self.list()[-1]
+        json_text = self.download(latest_file)
+        return json_text, latest_file
+
+    def rename(self, oldname, newname):
+        self.ftp.rename(oldname, newname)
+
+    def upload(self, path, filename):
+        with open(path, 'rb') as f:
+            self.ftp.storbinary(f"STOR {new_filename}", f)
+            print(f"📤 Nuovo file caricato: {new_filename}")
+
+        # === Funzione per scaricare un file JSON dal server FTP ===
+    def download(self, filename):
         buffer = io.BytesIO()
         self.ftp.retrbinary(f"RETR {filename}", buffer.write)
         json_bytes = buffer.getvalue()
@@ -26,20 +40,10 @@ class FtpHandler():
             json_text = json_bytes.decode('latin-1')
         finally:
             return json.loads(json_text)
-
-    # === FUNZIONE: Scarica ultimo file dal server ===
-    def get_last_json(self):
-        latest_file = self.get_files_from_ftp()[-1]
-        json_text = self.load_json_from_ftp(latest_file)
-        return json_text, latest_file
-
-    def rename(self, oldname, newname):
-        self.ftp.rename(oldname, newname)
-
-    def upload(self, path, filename):
-        with open(path, 'rb') as f:
-            self.ftp.storbinary(f"STOR {new_filename}", f)
-            print(f"📤 Nuovo file caricato: {new_filename}")
+            
+    def download_all(self):
+        file_names = self.get_files_from_ftp()
+        return [self.download(filename) for filename in file_names]
 
     def quit(self):
         self.ftp.quit()
