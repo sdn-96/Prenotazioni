@@ -46,7 +46,6 @@ if __name__=='__main__':
     print(f"{len(data_rows)} righe salvate in '{new_filename}'")
 
     # === FTP: Upload con confronto ===
-    try:
     ftp_handler = FtpHandler()
     # Scarica il file JSON esistente (se presente)
     previous_content, previous_filename = ftp_handler.get_last_json() or (None, None)
