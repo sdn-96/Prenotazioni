@@ -4,12 +4,14 @@ import json
 from ftpserver import FtpHandler
 from datetime import datetime
 from config import DATE_FORMAT
+import copy
 
 LOG_FILE = 'storico_modifiche.txt'
 
-# Colonne da confrontare
-PARAMS = ["Check in", "Check out", "Notti", "Totale pernottamento", "Tot proprietario", "Netto proprietario"]
 
+ALL_PARAMS = [ "Appartamento", "Nome", "Nazione", "Check in", "Check out", "Notti", "Totale pernottamento", "Tot proprietario", "Netto proprietario", ""]
+# Colonne da confrontare
+COMPARE_PARAMS = ["Check in", "Check out", "Notti", "Totale pernottamento", "Tot proprietario", "Netto proprietario"]
 
 # Costruisce un dizionario {Nome: riga} per ogni file
 def build_row_dict(data):
@@ -41,17 +43,19 @@ def compare_jsons(old_json, new_json):
     # Prenotazioni cancellate
     for nome in old_dict:
         if nome not in new_dict:
-            changes.append(f"❌ Prenotazione cancellata: {nome}, -{old_dict[nome][8]}")
+            row = old_dict[nome]
+            changes.append(f"❌ Prenotazione cancellata: {row[0]} - {nome}, {row[3]} -> {row[4]}, -{row[8]}")
 
     # Prenotazioni nuove o modificate
     for nome in new_dict:
         if nome not in old_dict:
-            changes.append(f"✅ Nuova prenotazione: {nome}, +{new_dict[nome][8]}")
+            row = new_dict[nome]
+            changes.append(f"✅ Nuova prenotazione: {row[0]} - {nome}, {row[3]} -> {row[4]}, +{row[8]}")
         else:
             diffs = []
             old_row = old_dict[nome]
             new_row = new_dict[nome]
-            for param in PARAMS:
+            for param in COMPARE_PARAMS:
                 idx = old_cols[param]
                 old_val = str(old_row[idx])
                 new_val = str(new_row[idx])
@@ -59,7 +63,6 @@ def compare_jsons(old_json, new_json):
                     diffs.append(f"{param}: '{old_val}' -> '{new_val}'")
             if diffs:
                 changes.append(f"🔄 Modifiche in {nome}: " + "; ".join(diffs))
-
     return changes
 
 def readable_date(timestamp):
@@ -83,6 +86,7 @@ def create_log(json_file_names, json_files):
         timestamp2 = timestamps[i]
 
         print(f"Confrontando {file1} con {file2}...")
+
         # Confronta i due file e registra le modifiche
         changes = compare_jsons(old_json, new_json)
         res += f"Rilevazione {readable_date(timestamp2)}"+"\n\n"
@@ -145,14 +149,6 @@ def integrate_changes(base_dict, changes_dict):
                 for _row in new_dict["rows"]
                 ]
     return new_dict
-
-
-
-
-
-
-
-    
     
 
 if __name__=='__main__':
@@ -160,7 +156,7 @@ if __name__=='__main__':
     ftp_handler = FtpHandler()
 
     # Ottenere l'elenco dei file JSON ordinati per timestamp (nome)
-    json_files = ftp_handler.get_files_from_ftp()
+    json_files = ftp_handler.list()
     timestamps = [file.split('_')[-1].replace('.json', '') for file in json_files]
 
     # Se ci sono almeno due file, confrontali
@@ -178,8 +174,8 @@ if __name__=='__main__':
                 print(f"Confrontando {file1} con {file2}...")
 
                 # Carica il contenuto dei file JSON dal server FTP
-                old_json = load_json_from_ftp(ftp, file1)
-                new_json = load_json_from_ftp(ftp, file2)
+                old_json = ftp_handler.download(file1)
+                new_json = ftp_handler.download(file2)
 
                 # Estrai i timestamp dai nomi dei file (assumendo che contengano il timestamp nel nome)
                 timestamp1 = timestamps[i-1]
