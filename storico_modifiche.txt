@@ -1,0 +1,1326 @@
+📘 STORICO MODIFICHE PRENOTAZIONI
+
+Rilevazione Base 08/04/2025 00:43
+========================================
+
+Rilevazione 08/04/2025 21:09
+
+• 🔄 Modifiche in 5074/2025: Tot proprietario: '€197,59' -> '€203,47'; Netto proprietario: '€197,59' -> '€203,47'
+• ✅ Nuova prenotazione: L. NESSO - 5360/2025, 13/06/2025 -> 16/06/2025, +€409,76
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 08/04/2025 22:03
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 08/04/2025 22:33
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5369/2025, 27/05/2025 -> 29/05/2025, +€235,69
+
+----------------------------------------
+
+Rilevazione 08/04/2025 23:36
+
+• ❌ Prenotazione cancellata: L. ARGEGNO - 5369/2025, 27/05/2025 -> 29/05/2025, -€235,69
+
+----------------------------------------
+
+Rilevazione 09/04/2025 07:39
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 09/04/2025 17:30
+
+• ❌ Prenotazione cancellata: L. MENAGGIO - 5315/2025, 30/08/2025 -> 06/09/2025, -€637,60
+
+----------------------------------------
+
+Rilevazione 10/04/2025 07:55
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 14:59
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:19
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+• ✅ Nuova prenotazione: L. CERNOBBIO - 5381/2025, 24/07/2025 -> 26/07/2025, +€233,66
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:20
+
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:30
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+• ✅ Nuova prenotazione: L. NESSO, L. MENAGGIO - 5382/2025, 06/07/2025 -> 13/07/2025, +€1.487,36
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:41
+
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:45
+
+
+----------------------------------------
+
+Rilevazione 10/04/2025 18:11
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 20:09
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5388/2025, 01/05/2025 -> 03/05/2025, +€252,33
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 21:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 22:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 05:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 10:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 11:07
+
+• ✅ Nuova prenotazione: L. CERNOBBIO - 5393/2025, 08/07/2025 -> 10/07/2025, +€276,77
+
+----------------------------------------
+
+Rilevazione 11/04/2025 12:15
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 14:08
+
+• ✅ Nuova prenotazione: L. TORNO - 5394/2025, 15/06/2025 -> 17/06/2025, +€223,32
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 15:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 16:10
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 17:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 18:11
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 05:08
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 06:10
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 07:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 08:10
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5402/2025, 28/05/2025 -> 30/05/2025, +€214,98
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 09:07
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 11:05
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 12:13
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 15:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 16:08
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 17:06
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 18:10
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 20:08
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5410/2025, 05/06/2025 -> 10/06/2025, +€670,23
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 23:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 06:11
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 10:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 11:04
+
+• ✅ Nuova prenotazione: L. CERNOBBIO - 5411/2025, 02/06/2025 -> 07/06/2025, +€670,37
+
+----------------------------------------
+
+Rilevazione 13/04/2025 13:16
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 14:06
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 15:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 16:08
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 17:06
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 19:04
+
+• ✅ Nuova prenotazione: L. NESSO, L. CERNOBBIO, L. BRIENNO, L. TREMEZZO - 5416/2025, 07/06/2025 -> 11/06/2025, +€2.185,95
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 20:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 22:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 23:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 00:44
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 05:09
+
+• ✅ Nuova prenotazione: L. NESSO - 5424/2025, 20/04/2025 -> 21/04/2025, +€136,54
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 07:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 09:10
+
+• 🔄 Modifiche in 4756/2024: Tot proprietario: '€619,58' -> '€625,46'; Netto proprietario: '€619,58' -> '€625,46'
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 10:10
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 12:15
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 13:21
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 18:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 19:07
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 21:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 23:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 02:23
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 05:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 07:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 08:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 09:10
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 11:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 12:15
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 14:09
+
+• ✅ Nuova prenotazione: L. NESSO - 5441/2025, 01/05/2025 -> 03/05/2025, +€323,78
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 15:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 17:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 19:06
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 23:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 02:22
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 05:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 07:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 10:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 13:20
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 14:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 15:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 16:10
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 18:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 19:06
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 20:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 22:07
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 00:41
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 03:28
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 04:11
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 05:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 06:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 10:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 11:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 13:19
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 15:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 16:10
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 17:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 18:11
+
+• ✅ Nuova prenotazione: L. BELLAGIO - 5460/2025, 06/05/2025 -> 08/05/2025, +€103,59
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 19:06
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 20:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+📘 STORICO MODIFICHE PRENOTAZIONI
+
+Rilevazione Base 08/04/2025 00:43
+========================================
+
+Rilevazione 08/04/2025 21:09
+
+• 🔄 Modifiche in 5074/2025: Tot proprietario: '€197,59' -> '€203,47'; Netto proprietario: '€197,59' -> '€203,47'
+• ✅ Nuova prenotazione: L. NESSO - 5360/2025, 13/06/2025 -> 16/06/2025, +€409,76
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 08/04/2025 22:03
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 08/04/2025 22:33
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5369/2025, 27/05/2025 -> 29/05/2025, +€235,69
+
+----------------------------------------
+
+Rilevazione 08/04/2025 23:36
+
+• ❌ Prenotazione cancellata: L. ARGEGNO - 5369/2025, 27/05/2025 -> 29/05/2025, -€235,69
+
+----------------------------------------
+
+Rilevazione 09/04/2025 07:39
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 09/04/2025 17:30
+
+• ❌ Prenotazione cancellata: L. MENAGGIO - 5315/2025, 30/08/2025 -> 06/09/2025, -€637,60
+
+----------------------------------------
+
+Rilevazione 10/04/2025 07:55
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 14:59
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:19
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+• ✅ Nuova prenotazione: L. CERNOBBIO - 5381/2025, 24/07/2025 -> 26/07/2025, +€233,66
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:20
+
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:30
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+• ✅ Nuova prenotazione: L. NESSO, L. MENAGGIO - 5382/2025, 06/07/2025 -> 13/07/2025, +€1.487,36
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:41
+
+
+----------------------------------------
+
+Rilevazione 10/04/2025 16:45
+
+
+----------------------------------------
+
+Rilevazione 10/04/2025 18:11
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 20:09
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5388/2025, 01/05/2025 -> 03/05/2025, +€252,33
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 21:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 10/04/2025 22:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 05:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 10:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 11:07
+
+• ✅ Nuova prenotazione: L. CERNOBBIO - 5393/2025, 08/07/2025 -> 10/07/2025, +€276,77
+
+----------------------------------------
+
+Rilevazione 11/04/2025 12:15
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 14:08
+
+• ✅ Nuova prenotazione: L. TORNO - 5394/2025, 15/06/2025 -> 17/06/2025, +€223,32
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 15:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 16:10
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 17:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 11/04/2025 18:11
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 05:08
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 06:10
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 07:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 08:10
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5402/2025, 28/05/2025 -> 30/05/2025, +€214,98
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 09:07
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 11:05
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 12:13
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 15:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 16:08
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 17:06
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 18:10
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 20:08
+
+• ✅ Nuova prenotazione: L. ARGEGNO - 5410/2025, 05/06/2025 -> 10/06/2025, +€670,23
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 12/04/2025 23:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 06:11
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 10:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 11:04
+
+• ✅ Nuova prenotazione: L. CERNOBBIO - 5411/2025, 02/06/2025 -> 07/06/2025, +€670,37
+
+----------------------------------------
+
+Rilevazione 13/04/2025 13:16
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 14:06
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 15:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 16:08
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 17:06
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 19:04
+
+• ✅ Nuova prenotazione: L. NESSO, L. CERNOBBIO, L. BRIENNO, L. TREMEZZO - 5416/2025, 07/06/2025 -> 11/06/2025, +€2.185,95
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 20:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 22:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 13/04/2025 23:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 00:44
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 05:09
+
+• ✅ Nuova prenotazione: L. NESSO - 5424/2025, 20/04/2025 -> 21/04/2025, +€136,54
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 07:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 09:10
+
+• 🔄 Modifiche in 4756/2024: Tot proprietario: '€619,58' -> '€625,46'; Netto proprietario: '€619,58' -> '€625,46'
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 10:10
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 12:15
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 13:21
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 18:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 19:07
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 21:08
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 14/04/2025 23:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 02:23
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 05:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 07:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 08:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 09:10
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 11:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 12:15
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 14:09
+
+• ✅ Nuova prenotazione: L. NESSO - 5441/2025, 01/05/2025 -> 03/05/2025, +€323,78
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 15:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 17:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 19:06
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 15/04/2025 23:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 02:22
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 05:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 07:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 10:08
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 13:20
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 14:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 15:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 16:10
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 18:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 19:06
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 20:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 16/04/2025 22:07
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 00:41
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 03:28
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 04:11
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 05:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 06:12
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 10:09
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 11:07
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 13:19
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 15:09
+
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.477,09' -> '€1.471,21'; Netto proprietario: '€1.477,09' -> '€1.471,21'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 16:10
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 17:07
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.191,82' -> '€2.185,95'; Netto proprietario: '€2.191,82' -> '€2.185,95'
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 18:11
+
+• ✅ Nuova prenotazione: L. BELLAGIO - 5460/2025, 06/05/2025 -> 08/05/2025, +€103,59
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€756,66' -> '€762,54'; Netto proprietario: '€756,66' -> '€762,54'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 19:06
+
+• 🔄 Modifiche in 5416/2025: Tot proprietario: '€2.185,95' -> '€2.191,82'; Netto proprietario: '€2.185,95' -> '€2.191,82'
+
+----------------------------------------
+
+Rilevazione 17/04/2025 20:09
+
+• 🔄 Modifiche in 5215/2025: Tot proprietario: '€762,54' -> '€756,66'; Netto proprietario: '€762,54' -> '€756,66'
+• 🔄 Modifiche in 5115/2025: Tot proprietario: '€1.471,21' -> '€1.477,09'; Netto proprietario: '€1.471,21' -> '€1.477,09'
+
+----------------------------------------
+

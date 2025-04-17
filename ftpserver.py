@@ -25,8 +25,8 @@ class FtpHandler():
 
     def upload(self, path, filename):
         with open(path, 'rb') as f:
-            self.ftp.storbinary(f"STOR {new_filename}", f)
-            print(f"📤 Nuovo file caricato: {new_filename}")
+            self.ftp.storbinary(f"STOR {filename}", f)
+            print(f"📤 Nuovo file caricato: {filename}")
 
         # === Funzione per scaricare un file JSON dal server FTP ===
     def download(self, filename):
@@ -42,7 +42,7 @@ class FtpHandler():
             return json.loads(json_text)
             
     def download_all(self):
-        file_names = self.get_files_from_ftp()
+        file_names = self.list()
         return [self.download(filename) for filename in file_names]
 
     def quit(self):
