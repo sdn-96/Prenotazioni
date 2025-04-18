@@ -23,10 +23,17 @@ class FtpHandler():
     def rename(self, oldname, newname):
         self.ftp.rename(oldname, newname)
 
-    def upload(self, path, filename):
+    def upload_file(self, path, filename):
         with open(path, 'rb') as f:
             self.ftp.storbinary(f"STOR {filename}", f)
             print(f"📤 Nuovo file caricato: {filename}")
+
+    def upload(self, json_str, filename):
+        json_bytes = json_str.encode('utf-8')
+        buffer = io.BytesIO(json_bytes)
+        buffer.seek(0)
+        self.ftp.storbinary(f"STOR {filename}", buffer)
+        print(f"📤 Nuovo file caricato: {filename}")
 
         # === Funzione per scaricare un file JSON dal server FTP ===
     def download(self, filename):
@@ -39,7 +46,7 @@ class FtpHandler():
             print("⚠️ Il file remoto non è in UTF-8. Provo con latin-1...")
             json_text = json_bytes.decode('latin-1')
         finally:
-            return json.loads(json_text)
+            return json_text
             
     def download_all(self):
         file_names = self.list()

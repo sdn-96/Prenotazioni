@@ -67,5 +67,5 @@ def analize(res):
     for row in table.find_all('tr')[1:]:  # salta header
         cols = row.find_all('td')
         if cols:
-            data_rows.append([td.text.strip() for td in cols])
+            data_rows.append([td.text.encode('ascii', 'ignore').decode().strip() for td in cols])
     return headers, data_rows

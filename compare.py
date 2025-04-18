@@ -34,7 +34,9 @@ def save_changes_to_json(changes, path):
 
 
 # Confronta due file JSON e restituisce una lista di modifiche testuali
-def compare_jsons(old_json, new_json):
+def compare_jsons(old_json_str, new_json_str):
+    old_json = json.loads(old_json_str)
+    new_json = json.loads(new_json_str)
     old_dict, old_cols = build_row_dict(old_json)
     new_dict, new_cols = build_row_dict(new_json)
 
