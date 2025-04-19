@@ -8,7 +8,6 @@ import copy
 
 LOG_FILE = 'storico_modifiche.txt'
 
-
 ALL_PARAMS = [ "Appartamento", "Nome", "Nazione", "Check in", "Check out", "Notti", "Totale pernottamento", "Tot proprietario", "Netto proprietario", ""]
 # Colonne da confrontare
 COMPARE_PARAMS = ["Check in", "Check out", "Notti", "Totale pernottamento", "Tot proprietario", "Netto proprietario"]
@@ -32,8 +31,6 @@ def save_changes_to_json(changes, path):
         json.dump(_dict, f, indent=4)
     return
 
-
-# Confronta due file JSON e restituisce una lista di modifiche testuali
 def compare_jsons(old_json_str, new_json_str):
     old_json = json.loads(old_json_str)
     new_json = json.loads(new_json_str)
@@ -83,13 +80,11 @@ def create_log(json_file_names, json_files):
         old_json = json_files[i-1]
         new_json = json_files[i]
 
-        # Estrai i timestamp dai nomi dei file (assumendo che contengano il timestamp nel nome)
         timestamp1 = timestamps[i-1]
         timestamp2 = timestamps[i]
 
         print(f"Confrontando {file1} con {file2}...")
 
-        # Confronta i due file e registra le modifiche
         changes = compare_jsons(old_json, new_json)
         res += f"Rilevazione {readable_date(timestamp2)}"+"\n\n"
         for change in changes:
@@ -128,7 +123,6 @@ def get_changes(json1, json2):
                 if old_val != new_val:
                     diffs.append(f"{param}: '{old_val}' -> '{new_val}'")
             if diffs:
-                
                 change = ["modified"] + new_row
                 changes.append(change)
     return changes
@@ -154,44 +148,11 @@ def integrate_changes(base_dict, changes_dict):
     
 
 if __name__=='__main__':
-    # === MAIN ===
     ftp_handler = FtpHandler()
-
-    # Ottenere l'elenco dei file JSON ordinati per timestamp (nome)
-    json_files = ftp_handler.list()
-    timestamps = [file.split('_')[-1].replace('.json', '') for file in json_files]
-
-    # Se ci sono almeno due file, confrontali
-    if len(json_files) >= 2:
-        storico_path = os.path.join(os.getcwd(), LOG_FILE)
-        with open(storico_path, 'w', encoding='utf-8') as log:
-            log.write("📘 STORICO MODIFICHE PRENOTAZIONI\n\n")
-            log.write(f"Rilevazione Base {readable_date(timestamps[0])}"+"\n")
-            log.write("="*40 + "\n\n")
-            for i in range(1, len(json_files)):
-                # Carica i due file JSON da confrontare
-                file1 = json_files[i - 1]
-                file2 = json_files[i]
-
-                print(f"Confrontando {file1} con {file2}...")
-
-                # Carica il contenuto dei file JSON dal server FTP
-                old_json = ftp_handler.download(file1)
-                new_json = ftp_handler.download(file2)
-
-                # Estrai i timestamp dai nomi dei file (assumendo che contengano il timestamp nel nome)
-                timestamp1 = timestamps[i-1]
-                timestamp2 = timestamps[i]
-
-                # Confronta i due file e registra le modifiche
-                changes = compare_jsons(old_json, new_json)
-                log.write(f"Rilevazione {readable_date(timestamp2)}"+"\n\n")
-                for change in changes:
-                    if change:
-                        log.write("• " + change + "\n")
-                    else:
-                        log.write("✅ Nessuna modifica rilevata\n")
-                log.write("\n" + "-"*40 + "\n\n")
+    json_file_names = ftp_handler.list_jsons()
+    timestamps = [file.split('_')[-1].replace('.json', '') for file in json_file_names]
+    if len(json_file_names) >= 2:
+        jsons = ftp_handler.download_all()
+        log = create_log(json_file_names, jsons)
+        ftp_handler.upload(log, 'storico_modifiche.txt')
     ftp_handler.quit()
-
-
