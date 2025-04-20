@@ -42,21 +42,26 @@ if __name__=='__main__':
     headers, data_rows = analize(results)
     print('File analizzato')
     new_json_str = save_to_json(headers, data_rows)
-    print(f"{len(data_rows)} righe salvate in '{new_filename}'")
 
     ftp_handler = FtpHandler()
-    last_json_str, previous_filename = ftp_handler.get_last_json() or (None, None)
-    diff = DeepDiff(last_json_str, new_json_str, ignore_order=True)
-    diff = False
-    if diff:
-        ftp_handler.upload(new_json_str, new_filename)
+    json_names = ftp_handler.list_jsons()
+    json_files = ftp_handler.downlad_all()
+    json_basefiles = filter(json_files)
+    json_changes = filter(json_files)
+    new_baseline = last_base_json
+    for json_change in json_changes:
+        new_baseline = integrate_changes(new_baseline, json_change)
+    last_changes = get_changes(new_baseline, new_json)
+    
+    if last_changes:
+        ftp_handler.upload(last_changes, 'changes_bla bla')
     else:
         ftp_handler.rename(previous_filename, new_filename)
         print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
+
     if diff or ('storico_modifiche.txt' not in ftp_handler.list()) or force_new_log:
-        jsons = ftp_handler.download_all()
-        json_file_names = ftp_handler.list_jsons()
-        log = create_log(json_file_names, jsons)
+        all_changes = json_changes + last_changes
+        log = create_log(json_file_names, all_changes)
         ftp_handler.upload(log, 'storico_modifiche.txt')
     ftp_handler.quit()
 
