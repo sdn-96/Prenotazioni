@@ -69,6 +69,9 @@ def readable_date(timestamp):
     return datetime.strftime(data_file, "%d/%m/%Y %H:%M")
 
 def create_log(json_file_names, json_files):
+    netto_proprietario = lambda x: float(x[8].replace('.','').replace(',','.'))
+    tot_pernottamento = lambda x: float(x[6].replace('.','').replace(',','.'))
+
     timestamps = [file.split('_')[-1].replace('.json', '') for file in json_file_names]
     res = ""
     res += "📘 STORICO MODIFICHE PRENOTAZIONI\n\n"
@@ -92,6 +95,10 @@ def create_log(json_file_names, json_files):
                 res += "• " + change + "\n"
             else:
                 res += "✅ Nessuna modifica rilevata\n"
+        prenotazioni = json.loads(new_json)['rows']
+        netto = sum(map(netto_proprietario, prenotazioni))
+        lordo = sum(map(tot_pernottamento, prenotazioni))
+        res += "\n" "TOTALE | "+ f"Pernottamento: {lordo:.2f}€ | " + f"netto: {netto:.2f}€"
         res += "\n" + "-"*40 + "\n\n"
     return res
 
