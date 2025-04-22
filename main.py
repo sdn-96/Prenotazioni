@@ -54,7 +54,6 @@ if __name__=='__main__':
         print(f"🔁 Nessuna differenza: sovrascritto '{previous_filename}' con '{new_filename}'")
 
     if diff or ('storico_modifiche.txt' not in ftp_handler.list()) or force_new_log:
-        #ftp_handler.upload(new_json_str, new_filename)
         jsons = ftp_handler.download_all()
         json_file_names = ftp_handler.list_jsons()
         log = create_log(json_file_names, jsons)
