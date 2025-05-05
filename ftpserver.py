@@ -73,7 +73,7 @@ class FtpHandler():
             return [self.strip_all_strings(elem) for elem in obj]
         else:
             raise Exception(f'Wrong type of data: {type(obj)}')
-
+            
 if __name__=='__main__':
     ftp_handler = FtpHandler()
     ftp_handler.fix_jsons()
