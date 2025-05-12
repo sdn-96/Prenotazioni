@@ -2,6 +2,16 @@ import io, json
 from ftplib import FTP
 from config import FTP_HOST, FTP_USER, FTP_PASS, FTP_DIR
 
+def change_folder(folder=FTP_DIR):
+    def wrapper(method):
+        def decorator(self, *args):
+            self.ftp.cwd(folder)
+            res = method(self, *args)
+            self.ftp.cwd(f'/{FTP_DIR}')
+            return res
+        return decorator
+    return wrapper
+
 class FtpHandler():
     def __init__(self):
         self.ftp = FTP(FTP_HOST, encoding='latin-1', timeout=100)
@@ -47,10 +57,6 @@ class FtpHandler():
             json_text = json_bytes.decode('latin-1')
         finally:
             return json_text
-            
-    def download_all(self):
-        file_names = self.list_jsons()
-        return [self.download(filename) for filename in file_names]
 
     def quit(self):
         self.ftp.quit()
@@ -73,6 +79,27 @@ class FtpHandler():
             return [self.strip_all_strings(elem) for elem in obj]
         else:
             raise Exception(f'Wrong type of data: {type(obj)}')
+
+    @change_folder('CHANGES')
+    def list_changes(self):
+        return self.list_jsons()
+
+    @change_folder('CHANGES')
+    def upload_changes(self, json_str, filename):
+        self.upload(json_str, filename)
+
+    @change_folder('CHANGES')
+    def download_change(self, filename):
+        return self.download(filename)
+
+    @change_folder('CHANGES')
+    def download_all_changes(self):
+        return self.download_all()
+            
+    def download_all(self):
+        file_names = self.list_jsons()
+        return [self.download(filename) for filename in file_names]
+
             
 if __name__=='__main__':
     ftp_handler = FtpHandler()
