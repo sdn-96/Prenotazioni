@@ -103,7 +103,7 @@ def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, 
     if reverse:
         iteration_list = range(len(json_changes)-1, -1, -1)
     else:
-        iteration_list = range(len(json_changes)-1, -1, -1)
+        iteration_list = range(len(json_changes))
     for i in iteration_list:
         _dict = json.loads(json_changes[i])
         if _dict["type"] != "change":
