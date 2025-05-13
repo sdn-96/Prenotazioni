@@ -4,7 +4,6 @@ from datetime import datetime
 from deepdiff import DeepDiff
 import json
 import os
-import sys
 from config import BASE_FILENAME, DATE_FORMAT
 from compare import create_log, get_changes, create_log_from_changes, changes_to_json, integrate_changes
 import requests
@@ -30,10 +29,6 @@ def save_to_json(headers, data):
 
 
 if __name__=='__main__':
-    if len(sys.argv)>1:
-        force_new_log = sys.argv[1]=='force'
-    else:
-        force_new_log = False
     timestamp = get_timestamp()
     new_filename = f"{BASE_FILENAME}_{timestamp}.json" 
     session = login()
@@ -56,26 +51,15 @@ if __name__=='__main__':
         last_changes = changes_to_json(last_changes) 
         ftp_handler.upload_changes(last_changes, changes_name)
         ftp_handler.upload(new_json_str, new_filename)
+        ftp_handler.delete(last_json_name)
     else:
         ftp_handler.rename(last_json_name, new_filename)
         print(f"🔁 Nessuna differenza: sovrascritto '{last_json_name}' con '{new_filename}'")
 
-    if last_changes:
-        rebuild_dict = integrate_changes(last_json_str, last_changes)
-        rebuild_str = json.dumps(rebuild_dict, indent=4)
-        if rebuild_str == last_json_str:
-            print('Il file è stato ricostruito correttamente')
-        else:
-            print('Il file ricostruito non è compatibile')
-
-    #for json_change in json_changes:
-    #    new_baseline = integrate_changes(new_baseline, json_change)
-
-    if last_changes or ('storico_modifiche.txt' not in ftp_handler.list()) or force_new_log:
-        all_json_changes = ftp_handler.download_all_changes()
-        all_names_changes = ftp_handler.list_changes()
-        log = create_log_from_changes(all_names_changes, all_json_changes)
-        ftp_handler.upload(log, 'storico_modifiche_prova.txt')
+    all_json_changes = ftp_handler.download_all_changes()
+    all_names_changes = ftp_handler.list_changes()
+    log = create_log_from_changes(all_names_changes, all_json_changes, timestamp)
+    ftp_handler.upload(log, 'storico_modifiche_prova.txt')
     ftp_handler.quit()
 
 

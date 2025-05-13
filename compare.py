@@ -87,9 +87,10 @@ def create_log(json_file_names, json_files):
         res += "\n" + "-"*40 + "\n\n"
     return res
 
-def create_log_from_changes(json_changes_names, json_changes, reverse=True):
+def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, reverse=True):
     res = ""
     res += "📘 STORICO MODIFICHE PRENOTAZIONI\n\n"
+    res += f"Ultima rilevazione: {readable_date(actual_timestamp)}\n"
     #res += f"Rilevazione Base {readable_date(timestamps[0])}"+"\n"
     res += "="*40 + "\n\n"
     if reverse:

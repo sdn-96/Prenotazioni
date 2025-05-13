@@ -58,6 +58,10 @@ class FtpHandler():
         finally:
             return json_text
 
+    def delete(self, filename):
+        self.ftp.delete(filename)
+        print(f"Il File {filename} è stato eliminato")
+
     def quit(self):
         self.ftp.quit()
 
