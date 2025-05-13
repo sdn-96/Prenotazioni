@@ -119,8 +119,15 @@ def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, 
             if row[0]=='modified':
                 res += f"🔄 Modifiche in: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, {row[9]}"
             res += '\n'
+        try:
+            totali = _dict["totali"]
+        except Exception:
+            pass
+        else:
+            lordo = totali["Totale pernottamento"]
+            netto = totali["Netto proprietario"]
+            res += "\n" "TOTALE | "+ f"Pernottamento: {lordo:.2f}€ | " + f"netto: {netto:.2f}€"
         res += "\n" + "-"*40 + "\n\n"
-
     return res
 
 
@@ -132,12 +139,32 @@ def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, 
 
 ##########################################################
 
+def extract_totals(json_str):
+    get_tot_pernottamento = lambda x: float(x[6].replace('.','').replace(',','.'))
+    get_tot_proprietario = lambda x: float(x[7].replace('.','').replace(',','.'))
+    get_netto_proprietario = lambda x: float(x[8].replace('.','').replace(',','.'))
+
+    prenotazioni = json.loads(json_str)['rows']
+
+    tot_pernottamento = sum(map(get_tot_pernottamento, prenotazioni))
+    tot_proprietario = sum(map(get_tot_proprietario, prenotazioni))
+    netto_proprietario = sum(map(get_netto_proprietario, prenotazioni))
+
+    totals = {
+        "Totale pernottamento": tot_pernottamento,
+        "Tot proprietario": tot_proprietario,
+        "Netto proprietario": netto_proprietario
+    }
+    return totals
+
+
 def get_changes(json1, json2):
     old_json = json.loads(json1)
     new_json = json.loads(json2)
     old_dict, old_cols = build_row_dict(old_json)
     new_dict, new_cols = build_row_dict(new_json)
-
+    
+    totals = extract_totals(json2)
     changes = []
 
     # Prenotazioni cancellate
@@ -164,13 +191,14 @@ def get_changes(json1, json2):
             if diffs:
                 change = ["modified"] + new_row
                 changes.append(change)
-    return changes
+    return changes, totals
 
-def changes_to_json(changes):
+def changes_to_json(changes_list, totals):
     _dict = {
         "type": "change",
+        "totali": totals,
         "columns": ["Change"]+ALL_PARAMS,
-        "rows" : changes
+        "rows" : changes_list
     }
     return json.dumps(_dict, indent=4)
 

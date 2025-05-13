@@ -44,12 +44,12 @@ if __name__=='__main__':
     last_json_str = ftp_handler.download(last_json_name)
     last_tmp = json_names[-1].split('_')[-1].replace('.json','')
 
-    last_changes = get_changes(last_json_str, new_json_str)
+    last_changes, totals = get_changes(last_json_str, new_json_str)
     changes_name = f'{last_tmp}_{timestamp}.json'
 
     if last_changes:
-        last_changes = changes_to_json(last_changes) 
-        ftp_handler.upload_changes(last_changes, changes_name)
+        changes_str = changes_to_json(last_changes, totals) 
+        ftp_handler.upload_changes(changes_str, changes_name)
         ftp_handler.upload(new_json_str, new_filename)
         ftp_handler.delete(last_json_name)
     else:

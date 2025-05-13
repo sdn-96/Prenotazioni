@@ -86,6 +86,9 @@ class FtpHandler():
 
     @change_folder('CHANGES')
     def list_changes(self):
+        files = self.ftp.nlst()  # Ottieni l'elenco dei file nella directory
+        json_files = [f for f in files if f.endswith('.json')]
+        json_files = sorted(json_files, key=lambda x: x.split('_')[-1])
         return self.list_jsons()
 
     @change_folder('CHANGES')

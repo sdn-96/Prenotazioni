@@ -36,7 +36,12 @@ json structure for base retrived data
 '''
 json structure for base changes data
 {
-  "type": "change"
+  "type": "change",
+  "totali": {
+      "Totale pernottamento": "€XXXXX",
+      "Tot proprietario": "€XXXXX",
+      "Netto proprietario": "€XXXXX"
+  },
   "columns": [
     "Change",
     "Appartamento",
