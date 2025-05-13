@@ -1,6 +1,6 @@
 from ftpserver import FtpHandler
 from web import login, request_data, analize 
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from deepdiff import DeepDiff
 import json
 import os
@@ -8,15 +8,31 @@ from config import BASE_FILENAME, DATE_FORMAT
 from compare import create_log, get_changes, create_log_from_changes, changes_to_json, integrate_changes
 import requests
 
+def to_isoformat(iso_str):
+    if '.' in iso_str:
+        date_part, frac = iso_str.split('.')
+        frac = frac[:6]  # prendi solo i primi 6 decimali
+        iso_str = f"{date_part}.{frac}"
+    return iso_str 
+
 def get_timestamp():
     try:
-        response = requests.get("http://worldtimeapi.org/api/timezone/Etc/UTC")
-        utc_time = response.json()["utc_datetime"]
-        now = datetime.fromisoformat(utc_time)
+        url = "https://www.timeapi.io/api/Time/current/zone?timeZone=UTC"
+        res = requests.get(url)
+        print('Real time retrieved')
     except Exception:
-        now = datetime.now()
+        now_ita = datetime.now()
+        print('Real time retriving failed')
+    else:
+        data = res.json()
+        utc_iso_str = data["dateTime"]
+        utc_iso_str = to_isoformat(utc_iso_str)
+        now = datetime.fromisoformat(utc_iso_str)
+        now = now.replace(tzinfo=timezone.utc)  # Assicura che sia UTC
+        now_ita = now.astimezone(timezone(timedelta(hours=2)))
     finally:
-        timestamp = now.strftime(DATE_FORMAT)
+        timestamp = now_ita.strftime(DATE_FORMAT)
+        print(timestamp)
     return timestamp
     
 def save_to_json(headers, data):
