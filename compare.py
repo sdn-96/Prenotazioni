@@ -21,16 +21,6 @@ def build_row_dict(data):
         for row in data["rows"]
     }, col_idx
 
-def save_changes_to_json(changes, path):
-    _dict = {
-        "type": "change",
-        "columns": ["Change"]+PARAMS,
-        "rows" : changes
-    }
-    with open(path, "w") as f:
-        json.dump(_dict, f, indent=4)
-    return
-
 def compare_jsons(old_json_str, new_json_str):
     old_json = json.loads(old_json_str)
     new_json = json.loads(new_json_str)
@@ -68,6 +58,8 @@ def readable_date(timestamp):
     data_file = datetime.strptime(timestamp, DATE_FORMAT)
     return datetime.strftime(data_file, "%d/%m/%Y %H:%M")
 
+#####################################################################################
+
 def create_log(json_file_names, json_files):
     netto_proprietario = lambda x: float(x[8].replace('.','').replace(',','.'))
     tot_pernottamento = lambda x: float(x[6].replace('.','').replace(',','.'))
@@ -102,9 +94,49 @@ def create_log(json_file_names, json_files):
         res += "\n" + "-"*40 + "\n\n"
     return res
 
+def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, reverse=True):
+    res = ""
+    res += "📘 STORICO MODIFICHE PRENOTAZIONI\n\n"
+    res += f"Ultima rilevazione: {readable_date(actual_timestamp)}\n"
+    #res += f"Rilevazione Base {readable_date(timestamps[0])}"+"\n"
+    res += "="*40 + "\n\n"
+    if reverse:
+        iteration_list = range(len(json_changes)-1, -1, -1)
+    else:
+        iteration_list = range(len(json_changes)-1, -1, -1)
+    for i in iteration_list:
+        _dict = json.loads(json_changes[i])
+        if _dict["type"] != "change":
+            raise Exception('There is a non change file')
+        name = json_changes_names[i].replace('.json', '')
+        timestamp = name.split('_')[-1]
+        res += f"Rilevazione {readable_date(timestamp)}"+"\n\n"
+        for row in _dict["rows"]:
+            if row[0]=='added':
+                res += f"✅ Nuova prenotazione: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, +{row[9]}"
+            if row[0]=='removed':
+                res += f"❌ Prenotazione cancellata: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, -{row[9]}"
+            if row[0]=='modified':
+                res += f"🔄 Modifiche in: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, {row[9]}"
+            res += '\n'
+        res += "\n" + "-"*40 + "\n\n"
+
+    return res
+
+
+
+
+
+
+    
+
+##########################################################
+
 def get_changes(json1, json2):
-    old_dict, old_cols = build_row_dict(json1)
-    new_dict, new_cols = build_row_dict(json2)
+    old_json = json.loads(json1)
+    new_json = json.loads(json2)
+    old_dict, old_cols = build_row_dict(old_json)
+    new_dict, new_cols = build_row_dict(new_json)
 
     changes = []
 
@@ -123,7 +155,7 @@ def get_changes(json1, json2):
             diffs = []
             old_row = old_dict[nome]
             new_row = new_dict[nome]
-            for param in PARAMS:
+            for param in ALL_PARAMS:
                 idx = old_cols[param]
                 old_val = str(old_row[idx])
                 new_val = str(new_row[idx])
@@ -134,9 +166,23 @@ def get_changes(json1, json2):
                 changes.append(change)
     return changes
 
-def integrate_changes(base_dict, changes_dict):
-    new_dict = copy.deepcopy(base_dict)
-    changes = changes_dict["rows"]
+def changes_to_json(changes):
+    _dict = {
+        "type": "change",
+        "columns": ["Change"]+ALL_PARAMS,
+        "rows" : changes
+    }
+    return json.dumps(_dict, indent=4)
+
+#####################################################
+
+def integrate_changes(base_json_str, changes_json_str):
+    base_json = json.loads(base_json_str)
+    change_json = json.loads(changes_json_str)
+    #base_dict, base_cols = build_row_dict(base_json)
+    #change_dict, change_cols = build_row_dict(change_json)
+    changes = change_json["rows"]
+    new_dict = base_json
     for change in changes:
         change_type = change[0]
         change_row = change[1:]
