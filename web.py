@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from config import URL_LOGIN, URL_RESERVATIONS
 from config import USERNAME, PASSWORD
 
-START_DATE = '01/05/2024'
+START_DATE = '01/01/2024'
 END_DATE = '31/12/2026'
 
 
