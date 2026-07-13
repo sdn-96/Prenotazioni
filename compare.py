@@ -116,7 +116,7 @@ def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, 
                 res += f"✅ Nuova prenotazione: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, +{row[9]}"
             if row[0]=='removed':
                 res += f"❌ Prenotazione cancellata: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, -{row[9]}"
-            if row[0]=='modified':
+            if row[0]=='modified' and False:
                 res += f"🔄 Modifiche in: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, {row[9]}"
             res += '\n'
         try:
