@@ -2,7 +2,7 @@ name: Run prenotazioni
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Runs every hour at min 0, # */5 for every 5 min
+    - cron: "0 */4 * * *"  # Runs every hour at min 0, # */5 for every 5 min
   workflow_dispatch: # permette anche l'esecuzione manuale
 
 jobs:
