@@ -110,24 +110,28 @@ def create_log_from_changes(json_changes_names, json_changes, actual_timestamp, 
             raise Exception('There is a non change file')
         name = json_changes_names[i].replace('.json', '')
         timestamp = name.split('_')[-1]
-        res += f"Rilevazione {readable_date(timestamp)}"+"\n\n"
-        for row in _dict["rows"]:
-            if row[0]=='added':
-                res += f"✅ Nuova prenotazione: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, +{row[9]}"
-            if row[0]=='removed':
-                res += f"❌ Prenotazione cancellata: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, -{row[9]}"
-            if row[0]=='modified' and False:
-                res += f"🔄 Modifiche in: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, {row[9]}"
-            res += '\n'
-        try:
-            totali = _dict["totali"]
-        except Exception:
-            pass
+        if all(row[0]=='modified' for row in _dict["rows"]):
+            continue
         else:
-            lordo = totali["Totale pernottamento"]
-            netto = totali["Netto proprietario"]
-            res += "\n" "TOTALE | "+ f"Pernottamento: {lordo:.2f}€ | " + f"netto: {netto:.2f}€"
-        res += "\n" + "-"*40 + "\n\n"
+            res += f"Rilevazione {readable_date(timestamp)}"+"\n\n"
+            for row in _dict["rows"]:
+                if row[0]=='added':
+                    res += f"✅ Nuova prenotazione: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, +{row[9]}"
+                if row[0]=='removed':
+                    res += f"❌ Prenotazione cancellata: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, -{row[9]}"
+                if row[0]=='modified':
+                    # res += f"🔄 Modifiche in: {row[1]} - {row[2]}, {row[4]} -> {row[5]}, {row[9]}"
+                    continue
+                res += '\n'
+            try:
+                totali = _dict["totali"]
+            except Exception:
+                pass
+            else:
+                lordo = totali["Totale pernottamento"]
+                netto = totali["Netto proprietario"]
+                res += "\n" "TOTALE | "+ f"Pernottamento: {lordo:.2f}€ | " + f"netto: {netto:.2f}€"
+            res += "\n" + "-"*40 + "\n\n"
     return res
 
 
